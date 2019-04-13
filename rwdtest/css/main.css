@@ -1,0 +1,328 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body{
+	height:100%;
+	background-color: #cee8fd;
+	font-size:13px;
+	font-family: "맑은 고딕";
+	line-height: 1;
+}
+
+.header{
+	position: relative;
+	width:960px;
+	margin:0 auto;
+	padding:50px 50px;
+}
+
+.header h1{
+	max-width: 94px;
+}
+
+.header h1 a{
+	display: inline-block;
+}
+
+.header h1 img{
+	max-width: 94px;
+}
+
+
+.nav{
+	position: absolute;
+	right:10px;
+	bottom:50px;
+}
+
+.nav a{
+	display:inline-block;
+	padding:0 10px;
+	font-weight: bold;
+	color:#222;
+	font-size: 16px;
+}
+
+
+.main{
+	width:960px;
+	margin:0 auto;
+	padding-bottom: 50px;
+}
+
+.main::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main section{
+	position: relative;
+	float:left;
+	width:49.5%;
+	margin-bottom:1%;
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+
+.main section .div{
+	position: absolute;
+	top:50%;
+	left:0;
+	width:100%;
+	text-align: center;
+}
+
+.main section em{
+	display: inline-block;
+	width:100%;
+	margin-bottom:30px;
+	color:#fff;
+	font-size:36px;
+}
+
+.main section strong{
+	display: inline-block;
+	width:100%;
+	margin-bottom:30px;
+	color:#fff;
+	font-size:18px;
+}
+
+.main section .more{
+	display: inline-block;
+	width:120px;
+	height: 40px;
+	border:1px solid rgb(219, 216, 216);
+	line-height: 38px;
+	color:#fff;
+}
+
+.main .portfolio{
+	width: 100%;
+	height: 492px;
+	background-image:url(../image/img1.jpg);
+}
+
+
+.main .portfolio h2{
+	position: absolute;
+	top:50%;
+	left:0;
+	width:100%;
+	vertical-align: middle;
+}
+
+.main .portfolio em{
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.main .portfolio strong{
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.main .portfolio .more{
+	position: absolute;
+	top:75%;
+	left:45%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.main .html5{
+	height:300px;
+	background-color: #c0c0bf;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.main .css3{
+	float: right;
+	height:300px;
+	background-color: #27272e;
+	text-align: center;
+}
+
+.main .less{
+	clear:both;
+	width:24.25%;
+	height: 230px;
+	margin-bottom:0;
+	background-image: url(../image/less.jpg);
+}
+
+.main .js{
+	width:24.25%;
+	height: 230px;
+	margin-left:1%;
+	background-image: url(../image/js.jpg);
+}
+
+.main .svn{
+	width:24.25%;
+	height: 230px;
+	margin-left:1%;
+	background-image: url(../image/svn.jpg);
+}
+
+.main .git{
+	width:24.25%;
+	height: 230px;
+	margin-left:1%;
+	background-image: url(../image/git.jpg);
+}
+
+.footer{
+	background-color: #edf3f2;
+}
+
+.footmain{
+	position: relative;
+	width:960px;
+	height:100px;
+	margin:0 auto;
+	padding:30px 0;
+}
+
+.sns{
+	position: absolute;
+	top:30px;
+	right:0;
+}
+
+.sns a{
+	display: inline-block;
+	width:15px;
+	height: 15px;
+	padding:0 10px;
+	line-height: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.copyright{
+	position: absolute;
+	bottom:30px;
+	color:#282b2c;
+}
+
+.designby{
+	position: absolute;
+	bottom:30px;
+	right:0;
+	color:#2c3031;
+}
+
+.designby b{
+	color:#2c2d31;
+	font-weight:bold;
+}
+
+
+
+@media(max-width:959px){
+	.body{
+		padding:0 15px;
+	}
+
+	.header{
+		width:100%;
+		padding:45px 0 35px;
+		text-align: center;
+	}
+
+	.header h1{
+		display: inline-block;
+		margin-bottom:20px;
+	}
+	
+	.nav{
+		position: static;
+	}
+
+	.main{
+		width:100%;
+		padding-bottom: 45px;
+	}
+
+	.main section{
+		height: 372px;
+	}
+
+	.main section em{
+		font-size:28px;
+	}	
+
+	.main .portfolio{
+		height:376px;
+	}
+
+	.main .portfolio strong{
+		font-size:36px;
+	}
+
+	.main .portfolio .more{
+		bottom:35px;
+	}
+
+	.main .less{
+		width:49.5%;
+		height:372px;
+		margin-bottom: 1%;
+		margin-left:0;
+	}
+
+	.main .js{
+		float:right;
+		width:49.5%;
+		height:372px;
+		margin-bottom: 1%;
+		margin-left:0;
+	}
+
+	.main .svn{
+		clear: both;
+		width:49.5%;
+		height:372px;
+		margin-left:0;
+	}
+	
+	.main .git{
+		float:right;
+		width:49.5%;
+		height:372px;
+		margin-left:0;
+	}
+
+	.footer{
+		margin:0 -15px;
+
+	}
+
+	.foot{
+		width:100%;
+		height:auto;
+		text-align: center;
+	}
+
+	.sns{
+		position: static;
+		margin-bottom:15px;
+	}
+
+	.copyright{
+		position: static;
+		margin-bottom:10px;
+	}
+
+	.designby{
+		position: static;
+	}
+}
